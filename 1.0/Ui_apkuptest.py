@@ -1,0 +1,120 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'apkuptest.ui'
+#
+# Created by: PyQt5 UI code generator 5.6
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(922, 783)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.textEdit = QtWidgets.QTextEdit(self.centralwidget)
+        self.textEdit.setGeometry(QtCore.QRect(70, 160, 791, 91))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.textEdit.setFont(font)
+        self.textEdit.setObjectName("textEdit")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(160, 280, 351, 16))
+        self.label_2.setObjectName("label_2")
+        self.btn_chooseold = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_chooseold.setGeometry(QtCore.QRect(70, 130, 91, 23))
+        self.btn_chooseold.setObjectName("btn_chooseold")
+        self.btn_start = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_start.setGeometry(QtCore.QRect(70, 270, 75, 23))
+        self.btn_start.setObjectName("btn_start")
+        self.btn_choosenew = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_choosenew.setGeometry(QtCore.QRect(70, 60, 101, 23))
+        self.btn_choosenew.setObjectName("btn_choosenew")
+        self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
+        self.lineEdit.setGeometry(QtCore.QRect(190, 60, 331, 21))
+        self.lineEdit.setText("")
+        self.lineEdit.setObjectName("lineEdit")
+        self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
+        self.tableWidget.setGeometry(QtCore.QRect(70, 300, 791, 371))
+        self.tableWidget.setEditTriggers(QtWidgets.QAbstractItemView.DoubleClicked)
+        self.tableWidget.setAlternatingRowColors(False)
+        self.tableWidget.setGridStyle(QtCore.Qt.NoPen)
+        self.tableWidget.setRowCount(3)
+        self.tableWidget.setColumnCount(5)
+        self.tableWidget.setObjectName("tableWidget")
+        self.tableWidget.horizontalHeader().setVisible(False)
+        self.tableWidget.horizontalHeader().setCascadingSectionResizes(True)
+        self.tableWidget.horizontalHeader().setHighlightSections(True)
+        self.tableWidget.horizontalHeader().setSortIndicatorShown(False)
+        self.tableWidget.horizontalHeader().setStretchLastSection(False)
+        self.tableWidget.verticalHeader().setVisible(False)
+        self.tableWidget.verticalHeader().setHighlightSections(True)
+        self.combo_devices = QtWidgets.QComboBox(self.centralwidget)
+        self.combo_devices.setGeometry(QtCore.QRect(190, 20, 481, 22))
+        self.combo_devices.setObjectName("combo_devices")
+        self.btn_getdevices = QtWidgets.QPushButton(self.centralwidget)
+        self.btn_getdevices.setGeometry(QtCore.QRect(70, 20, 101, 21))
+        self.btn_getdevices.setObjectName("btn_getdevices")
+        self.horizontalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(70, 90, 791, 22))
+        self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.text_packagename = QtWidgets.QLabel(self.horizontalLayoutWidget)
+        self.text_packagename.setText("")
+        self.text_packagename.setObjectName("text_packagename")
+        self.horizontalLayout.addWidget(self.text_packagename)
+        self.label = QtWidgets.QLabel(self.horizontalLayoutWidget)
+        self.label.setText("")
+        self.label.setObjectName("label")
+        self.horizontalLayout.addWidget(self.label)
+        self.text_version = QtWidgets.QLabel(self.horizontalLayoutWidget)
+        self.text_version.setText("")
+        self.text_version.setObjectName("text_version")
+        self.horizontalLayout.addWidget(self.text_version)
+        self.text_startactivity = QtWidgets.QLabel(self.horizontalLayoutWidget)
+        self.text_startactivity.setText("")
+        self.text_startactivity.setObjectName("text_startactivity")
+        self.horizontalLayout.addWidget(self.text_startactivity)
+        self.text_systemlogpath = QtWidgets.QLabel(self.centralwidget)
+        self.text_systemlogpath.setGeometry(QtCore.QRect(70, 690, 791, 16))
+        self.text_systemlogpath.setText("")
+        self.text_systemlogpath.setTextFormat(QtCore.Qt.RichText)
+        self.text_systemlogpath.setObjectName("text_systemlogpath")
+        self.text_loggerpath = QtWidgets.QLabel(self.centralwidget)
+        self.text_loggerpath.setGeometry(QtCore.QRect(70, 710, 791, 16))
+        self.text_loggerpath.setText("")
+        self.text_loggerpath.setObjectName("text_loggerpath")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 922, 23))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.textEdit.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'SimSun\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">选择多个.apk文件并进行验证：</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">1 并进行验证：包名必须和新版本一致</p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">2. 展示该apk的版本信息</p></body></html>"))
+        self.label_2.setText(_translate("MainWindow", "//测试内容：覆盖升级、卸载、新包安装"))
+        self.btn_chooseold.setToolTip(_translate("MainWindow", "<html><head/><body><p><br/></p></body></html>"))
+        self.btn_chooseold.setWhatsThis(_translate("MainWindow", "<html><head/><body><p><br/></p></body></html>"))
+        self.btn_chooseold.setText(_translate("MainWindow", "选择旧版本APK"))
+        self.btn_start.setText(_translate("MainWindow", "开始测试"))
+        self.btn_choosenew.setText(_translate("MainWindow", "选择待发布APK"))
+        self.btn_getdevices.setText(_translate("MainWindow", "获取设备"))
+
